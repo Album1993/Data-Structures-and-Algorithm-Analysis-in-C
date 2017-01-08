@@ -258,6 +258,33 @@ polynomials/polynomials.c.s:
 	$(MAKE) -f CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/build.make CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials.c.s
 .PHONY : polynomials/polynomials.c.s
 
+polynomials/polynomials_List.o: polynomials/polynomials_List.c.o
+
+.PHONY : polynomials/polynomials_List.o
+
+# target to build an object file
+polynomials/polynomials_List.c.o:
+	$(MAKE) -f CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/build.make CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o
+.PHONY : polynomials/polynomials_List.c.o
+
+polynomials/polynomials_List.i: polynomials/polynomials_List.c.i
+
+.PHONY : polynomials/polynomials_List.i
+
+# target to preprocess a source file
+polynomials/polynomials_List.c.i:
+	$(MAKE) -f CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/build.make CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.i
+.PHONY : polynomials/polynomials_List.c.i
+
+polynomials/polynomials_List.s: polynomials/polynomials_List.c.s
+
+.PHONY : polynomials/polynomials_List.s
+
+# target to generate assembly for a file
+polynomials/polynomials_List.c.s:
+	$(MAKE) -f CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/build.make CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.s
+.PHONY : polynomials/polynomials_List.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +309,9 @@ help:
 	@echo "... polynomials/polynomials.o"
 	@echo "... polynomials/polynomials.i"
 	@echo "... polynomials/polynomials.s"
+	@echo "... polynomials/polynomials_List.o"
+	@echo "... polynomials/polynomials_List.i"
+	@echo "... polynomials/polynomials_List.s"
 .PHONY : help
 
 

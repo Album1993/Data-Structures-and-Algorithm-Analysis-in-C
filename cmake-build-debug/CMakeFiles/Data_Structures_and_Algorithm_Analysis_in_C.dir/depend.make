@@ -17,7 +17,11 @@ CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/list_P.c.
 CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/list_P.c.o: ../polynomials/list_P.h
 
 CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials.c.o: ../fatal.h
-CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials.c.o: ../polynomials/list_P.h
 CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials.c.o: ../polynomials/polynomials.c
 CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials.c.o: ../polynomials/polynomials.h
+
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o: ../fatal.h
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o: ../polynomials/list_P.h
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o: ../polynomials/polynomials_List.c
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o: ../polynomials/polynomials_List.h
 

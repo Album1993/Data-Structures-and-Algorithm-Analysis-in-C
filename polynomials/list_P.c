@@ -31,7 +31,7 @@ void Insert_P( PtrToNode X, List L, Position P ) {
     tmpCell = malloc(sizeof(Position));
     if (tmpCell == NULL)
         FatalError("out of space!!!");
-    tmpCell->Next = P->Next;
+    tmpCell->Next = X->Next;
     tmpCell->Exponent = X->Exponent;
     tmpCell->Coefficient = X->Coefficient;
     P->Next = tmpCell;

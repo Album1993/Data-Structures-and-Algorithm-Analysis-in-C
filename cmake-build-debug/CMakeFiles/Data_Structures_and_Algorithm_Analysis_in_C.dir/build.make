@@ -177,13 +177,38 @@ CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/list_P.c.
 CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/list_P.c.o.provides.build: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/list_P.c.o
 
 
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/flags.make
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o: ../polynomials/polynomials_List.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o   -c /Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/polynomials/polynomials_List.c
+
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/polynomials/polynomials_List.c > CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.i
+
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/polynomials/polynomials_List.c -o CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.s
+
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o.requires:
+
+.PHONY : CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o.requires
+
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o.provides: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o.requires
+	$(MAKE) -f CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/build.make CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o.provides.build
+.PHONY : CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o.provides
+
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o.provides.build: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o
+
+
 # Object files for target Data_Structures_and_Algorithm_Analysis_in_C
 Data_Structures_and_Algorithm_Analysis_in_C_OBJECTS = \
 "CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/LinkedList/list.c.o" \
 "CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/main.c.o" \
 "CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/LinkedList/testlist.c.o" \
 "CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials.c.o" \
-"CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/list_P.c.o"
+"CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/list_P.c.o" \
+"CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o"
 
 # External object files for target Data_Structures_and_Algorithm_Analysis_in_C
 Data_Structures_and_Algorithm_Analysis_in_C_EXTERNAL_OBJECTS =
@@ -193,9 +218,10 @@ Data_Structures_and_Algorithm_Analysis_in_C: CMakeFiles/Data_Structures_and_Algo
 Data_Structures_and_Algorithm_Analysis_in_C: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/LinkedList/testlist.c.o
 Data_Structures_and_Algorithm_Analysis_in_C: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials.c.o
 Data_Structures_and_Algorithm_Analysis_in_C: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/list_P.c.o
+Data_Structures_and_Algorithm_Analysis_in_C: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o
 Data_Structures_and_Algorithm_Analysis_in_C: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/build.make
 Data_Structures_and_Algorithm_Analysis_in_C: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable Data_Structures_and_Algorithm_Analysis_in_C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Data_Structures_and_Algorithm_Analysis_in_C"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -208,6 +234,7 @@ CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/requires: CMakeFiles/
 CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/requires: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/LinkedList/testlist.c.o.requires
 CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/requires: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials.c.o.requires
 CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/requires: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/list_P.c.o.requires
+CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/requires: CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/polynomials/polynomials_List.c.o.requires
 
 .PHONY : CMakeFiles/Data_Structures_and_Algorithm_Analysis_in_C.dir/requires
 

@@ -110,6 +110,12 @@
 		<Unit filename="/Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/polynomials/polynomials.h">
 			<Option target="Data_Structures_and_Algorithm_Analysis_in_C"/>
 		</Unit>
+		<Unit filename="/Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/polynomials/polynomials_List.c">
+			<Option target="Data_Structures_and_Algorithm_Analysis_in_C"/>
+		</Unit>
+		<Unit filename="/Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/polynomials/polynomials_List.h">
+			<Option target="Data_Structures_and_Algorithm_Analysis_in_C"/>
+		</Unit>
 		<Unit filename="/Users/zhangyiming/Documents/code/Data-Structures-and-Algorithm-Analysis-in-C/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
