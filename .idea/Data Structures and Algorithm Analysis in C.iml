@@ -2,13 +2,19 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/polynomials/list_P.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/polynomials/polynomials_List.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/polynomials/polynomials.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/polynomials/polynomials.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/polynomials/list_P.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/polynomials/polynomials_List.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/fatal.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LinkedList/testlist.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LinkedList/list.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LinkedList/testlist.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LinkedList/list.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LinkedList/testlist.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
