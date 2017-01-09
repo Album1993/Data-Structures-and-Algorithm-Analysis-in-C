@@ -2,9 +2,9 @@
 // Created by 张一鸣 on 2017/1/6.
 //
 
-#include "./LinkedList/testlist.h"
+#include "./polynomials/polynomials.h"
 
 int main(int argc, char * argv[]) {
-    linklistTest();
+    polynomials_test();
     return 1;
 }
