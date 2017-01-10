@@ -28,7 +28,7 @@ int IsLast_P( Position P, List L ) {
 
 void Insert_P( PtrToNode X, List L, Position P ) {
     Position tmpCell;
-    tmpCell = malloc(sizeof(Position));
+    tmpCell = malloc(sizeof(struct Node));
     if (tmpCell == NULL)
         FatalError("out of space!!!");
     tmpCell->Next = X->Next;

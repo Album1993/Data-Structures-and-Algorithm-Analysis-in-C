@@ -64,7 +64,7 @@ Position FindPrevious( ElementType X, List L ) {
 
 void Insert( ElementType X, List L, Position P ) {
     Position tmpCell;
-    tmpCell = malloc(sizeof(Position));
+    tmpCell = malloc(sizeof(struct Node));
     if (tmpCell == NULL)
         FatalError("out of space!!!");
     tmpCell->Next = P->Next;

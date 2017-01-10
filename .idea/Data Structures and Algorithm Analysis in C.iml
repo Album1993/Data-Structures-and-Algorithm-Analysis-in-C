@@ -2,18 +2,38 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/binarySearchTree/testTree.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/binarySearchTree/testTree.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/binarySearchTree/tree.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/binarySearchTree/tree.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fatal.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LinkedList/list.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LinkedList/testlist.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LinkedList/list.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LinkedList/testlist.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cursor/testCurs.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cursor/cursor.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cursor/testCurs.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cursor/cursor.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/queue/queue.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/queue/queue.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/queue/testQueue.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/queue/testQueue.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/polynomials/list_P.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/polynomials/polynomials_List.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/polynomials/polynomials.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/polynomials/polynomials.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/polynomials/list_P.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/polynomials/polynomials_List.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/fatal.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LinkedList/list.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LinkedList/testlist.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LinkedList/list.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LinkedList/testlist.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stackli/testStackli.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stackli/stackli.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stackli/testStackli.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stackli/stackli.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stackar/stackar.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stackar/teststka.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stackar/teststka.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stackar/stackar.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
