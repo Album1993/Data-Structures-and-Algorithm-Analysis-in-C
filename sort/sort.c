@@ -32,25 +32,29 @@ InsertionSort( ElementType A[ ], int N )
       Tmp = A[P];
       for ( j = P; j > 0 && A[ j - 1] > Tmp; j--)
         {
-          A[ j ] = 
+          A[ j ] = A [ j - 1];
         }
+      A [ j ] = Tmp;
     }
 }
 void Shellsort(ElementType A[], int N)
 {
-    int i,j,Increment;
+  int i , j , Increment;
   ElementType Tmp;
 
-    for (Increment = N / 2; Increment > 0 ; Increment /= 2) {
-        for (i = Increment; i < N ; i++) {
-            Tmp = A[i];
-            for ( j = i ; j >= Increment ; j -= Increment) {
-                if (Tmp < A[ j - Increment])
-                    A[ j ] = A [j - Increment];
-                else
-                    break;
-                A[ j ] = Tmp;
+  for (Increment = N / 2; Increment > 0 ; Increment /= 2)
+    {
+      for (int i = Increment; i < N; ++i)
+        {
+          Tmp = A[i];
+          for ( j = i; j >= Increment; j -= Increment)
+            {
+              if ( Tmp < A [ j - Increment ])
+                A[j] = A [ j - Increment];
+              else
+                break;
             }
+          A[j] = Tmp;
         }
     }
 }
@@ -59,16 +63,17 @@ void Shellsort(ElementType A[], int N)
 
 void PercDown (ElementType A[ ], int i, int N)
 {
-  int Child;
-  ElementType Tmp;
 
-  for ( Tmp = A[i] ; LeftChild ( i ) < N ; i = Child)
+  int Child;
+  ElementType  Tmp;
+
+  for ( Tmp = A[i] ; LeftChild ( i ) < N; i = Child)
     {
       Child = LeftChild (i);
       if (Child != N-1 && A[Child + 1] > A[Child])
         Child++;
       if (Tmp < A[Child])
-        A[ i ] = A[ Child ];
+        A[i] = A[Child];
       else
         break;
     }
@@ -84,10 +89,116 @@ void Heapsort (ElementType A[], int N) {
     }
   for ( i = N - 1; i > 0 ; i-- )
     {
+      //将最大的放在最后
       Swap (&A[ 0 ],&A[ i ]);
+      // 将剩余的排序最大的上去
       PercDown (A,0,i);
     }
 }
+
+/* Lpos = start of left half, Rpos = start of right half */
+void Merge( ElementType A[ ], ElementType TmpArray[ ],
+       int Lpos, int Rpos, int RightEnd ) {
+
+  printf ("Lpos :%d Rpos:%d RightEnd:%d\n",Lpos,Rpos,RightEnd);
+//  int i, LeftEnd, NumElements, TmpPos;
+//
+//  LeftEnd = Rpos - 1;
+//  TmpPos = Lpos;
+//  NumElements = RightEnd - Lpos + 1;
+//
+//  /* main loop */
+//  while( Lpos <= LeftEnd && Rpos <= RightEnd )
+//    if( A[ Lpos ] <= A[ Rpos ] )
+//      TmpArray[ TmpPos++ ] = A[ Lpos++ ];
+//    else
+//      TmpArray[ TmpPos++ ] = A[ Rpos++ ];
+//
+//  while( Lpos <= LeftEnd )  /* Copy rest of first half */
+//    TmpArray[ TmpPos++ ] = A[ Lpos++ ];
+//  while( Rpos <= RightEnd ) /* Copy rest of second half */
+//    TmpArray[ TmpPos++ ] = A[ Rpos++ ];
+//
+//  /* Copy TmpArray back */
+//  for( i = 0; i < NumElements; i++, RightEnd-- )
+//    A[ RightEnd ] = TmpArray[ RightEnd ];
+
+  int i ,LeftEnd,NumElements,TmpPos;
+
+  LeftEnd = Rpos - 1;
+  TmpPos = Lpos;
+  NumElements = RightEnd - Lpos + 1;
+
+  while ( Lpos <= LeftEnd && Rpos <= RightEnd)
+    if ( A [Lpos] <= A [Rpos])
+      TmpArray[TmpPos++] = A[Lpos ++];
+    else
+      TmpArray[TmpPos++] = A[Rpos ++];
+
+  while (Lpos <= LeftEnd)
+    TmpArray[TmpPos++] = A[Lpos++];
+  while  (Rpos <= RightEnd)
+    TmpArray[TmpPos++] = A[Rpos++];
+  for (i = 0; i < NumElements; i++,RightEnd--)
+    {
+      A[RightEnd] = TmpArray[RightEnd] ;
+    }
+
+}
+
+
+
+void
+MSort( ElementType A[ ], ElementType TmpArray[ ],
+       int Left, int Right )
+{
+//  int Center;
+//
+//  if( Left < Right )
+//    {
+//      Center = ( Left + Right ) / 2;
+//      MSort( A, TmpArray, Left, Center );
+//      MSort( A, TmpArray, Center + 1, Right );
+//      Merge( A, TmpArray, Left, Center + 1, Right );
+//    }
+
+  int Center;
+  if ( Left < Right )
+    {
+      Center = ( Left + Right ) / 2;
+      MSort ( A, TmpArray ,Left, Center);
+      MSort ( A, TmpArray, Center + 1, Right);
+      Merge ( A, TmpArray, Left, Center + 1,Right);
+    }
+}
+
+void
+Mergesort( ElementType A[ ], int N )
+{
+//  ElementType *TmpArray;
+//
+//  TmpArray = malloc( N * sizeof( ElementType ) );
+//  if( TmpArray != NULL )
+//    {
+//      MSort( A, TmpArray, 0, N - 1 );
+//      free( TmpArray );
+//    }
+//  else
+//    FatalError( "No space for tmp array!!!" );
+  ElementType *TmpArray;
+
+  TmpArray = malloc ( N * sizeof ( ElementType ));
+  if (TmpArray != NULL)
+    {
+      MSort (A, TmpArray ,0, N-1);
+      free (TmpArray);
+    }
+  else
+      FatalError( "No space for tmp array!!!" );
+
+}
+
+
 
 void Permute (ElementType A[],int N) {
   int i;
@@ -123,8 +234,8 @@ int Arr2[ MaxSize ];
 void testSort() {
   int i;
 
-  for( i = 0; i < 10; i++ )
-    {
+//  for( i = 0; i < 10; i++ )
+//    {
       Permute( Arr2, MaxSize );
 //      Copy( Arr1, Arr2, MaxSize );
 //      InsertionSort( Arr1, MaxSize );
@@ -138,9 +249,9 @@ void testSort() {
 //      Heapsort( Arr1, MaxSize );
 //      Checksort( Arr1, MaxSize );
 
-//      Copy( Arr1, Arr2, MaxSize );
-//      Mergesort( Arr1, MaxSize );
-//      Checksort( Arr1, MaxSize );
+      Copy( Arr1, Arr2, MaxSize );
+      Mergesort( Arr1, MaxSize );
+      Checksort( Arr1, MaxSize );
 //
 //      Copy( Arr1, Arr2, MaxSize );
 //      Quicksort( Arr1, MaxSize );
@@ -153,5 +264,5 @@ void testSort() {
 //                Arr1[ MaxSize / 2 + i ] );
 //      else
 //        printf( "Select works\n" );
-    }
+//    }
 }
