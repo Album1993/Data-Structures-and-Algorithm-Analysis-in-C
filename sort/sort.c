@@ -123,26 +123,23 @@ void Merge( ElementType A[ ], ElementType TmpArray[ ],
 //  for( i = 0; i < NumElements; i++, RightEnd-- )
 //    A[ RightEnd ] = TmpArray[ RightEnd ];
 
-  int i ,LeftEnd,NumElements,TmpPos;
+  int i , LeftEnd, NumElements,TmpPos;
 
   LeftEnd = Rpos - 1;
   TmpPos = Lpos;
   NumElements = RightEnd - Lpos + 1;
 
   while ( Lpos <= LeftEnd && Rpos <= RightEnd)
-    if ( A [Lpos] <= A [Rpos])
-      TmpArray[TmpPos++] = A[Lpos ++];
+    if ( A [Lpos] <= A[Rpos])
+      TmpArray[ TmpPos++ ] = A[ Lpos++ ];
     else
-      TmpArray[TmpPos++] = A[Rpos ++];
+      TmpArray[ TmpPos++ ] = A[ Rpos++ ];
 
-  while (Lpos <= LeftEnd)
-    TmpArray[TmpPos++] = A[Lpos++];
-  while  (Rpos <= RightEnd)
-    TmpArray[TmpPos++] = A[Rpos++];
-  for (i = 0; i < NumElements; i++,RightEnd--)
-    {
-      A[RightEnd] = TmpArray[RightEnd] ;
-    }
+  while ( Lpos <= LeftEnd )
+    TmpArray[ TmpPos++ ] = A[ Lpos++ ];
+  while ( Rpos <= RightEnd)
+    TmpArray[ TmpPos++ ] = A[ Rpos++ ];
+
 
 }
 
