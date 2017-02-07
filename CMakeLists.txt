@@ -36,5 +36,5 @@ set(SOURCE_FILES LinkedList/list.c
         binarySearchTree/testTree.c
         binarySearchTree/testTree.h
         avltree/avltree.c
-        avltree/avltree.h avltree/testavltree.c avltree/testavltree.h hashfunc/hashfunc.c hashfunc/hashfunc.h hashsep/hashsep.c hashsep/hashsep.h hashsep/testhash.c hashsep/testhash.h hashquad/hashquad.c hashquad/hashquad.h binheap/binheap.c binheap/binheap.h binheap/testheap.c binheap/testheap.h leftheap/leftheap.c leftheap/leftheap.h leftheap/testleftheap.c leftheap/testleftheap.h sort/sort.c sort/sort.h)
+        avltree/avltree.h avltree/testavltree.c avltree/testavltree.h hashfunc/hashfunc.c hashfunc/hashfunc.h hashsep/hashsep.c hashsep/hashsep.h hashsep/testhash.c hashsep/testhash.h hashquad/hashquad.c hashquad/hashquad.h binheap/binheap.c binheap/binheap.h binheap/testheap.c binheap/testheap.h leftheap/leftheap.c leftheap/leftheap.h leftheap/testleftheap.c leftheap/testleftheap.h sort/sort.c sort/sort.h disjset/disjset.c disjset/disjset.h)
 add_executable(Data_Structures_and_Algorithm_Analysis_in_C ${SOURCE_FILES})

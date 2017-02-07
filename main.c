@@ -1,7 +1,7 @@
 
 #include <stdlib.h>
-#include "sort/sort.h"
+#include "disjset/disjset.h"
 int main(void) {
-    testSort ();
+    testDisjSet ();
     return 0;
 }

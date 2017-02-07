@@ -34,6 +34,7 @@
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hashquad/hashquad.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hashquad/hashquad.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fatal.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/binheap/binheap.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/binheap/binheap.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/binheap/testheap.c" isTestSource="false" />
@@ -44,7 +45,8 @@
       <sourceFolder url="file://$MODULE_DIR$/LinkedList/testlist.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sort/sort.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sort/sort.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/fatal.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/disjset/disjset.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/disjset/disjset.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/leftheap/testleftheap.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/leftheap/leftheap.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/leftheap/testleftheap.c" isTestSource="false" />
